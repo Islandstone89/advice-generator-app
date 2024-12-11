@@ -7,7 +7,7 @@ let apiUrl = "https://api.adviceslip.com/advice";
 async function getAdvice() {
     const response = await fetch(apiUrl);
     const data = await response.json();
-      
+  
     adviceNumber.textContent = `#${data.slip.id}`;
     adviceText.textContent = `"${data.slip.advice}"`;
 }

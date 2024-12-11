@@ -17,8 +17,8 @@
     "start": "npm-run-all copy --parallel watch serve",
     "build": "npm-run-all copy:html build:*",
     "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
-    "copy:js": "copyfiles -u 1 ./src/*.js public",
-    "watch:js": "onchange \"src/*.js\" -- npm run copy:js"
+    "copy:js": "copyfiles -u 1 ./src/app/*.js public",
+    "watch:js": "onchange \"src/app/*.js\" -- npm run copy:js"
   },
   "dependencies": {
     "autoprefixer": "^10.4.2",
