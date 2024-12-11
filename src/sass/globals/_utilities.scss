@@ -1,0 +1,10 @@
+
+/* UTILITIES */
+
+.flow {
+    --flow-space: var(--size-300);
+}
+
+.flow > * + * {
+    margin-block-start: var(--flow-space, 1em);
+}
