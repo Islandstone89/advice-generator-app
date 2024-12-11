@@ -9,7 +9,7 @@ async function getAdvice() {
     const data = await response.json();
   
     adviceNumber.textContent = `#${data.slip.id}`;
-    adviceText.innerHTML= `&#x201F;${data.slip.advice}`;
+    adviceText.innerHTML= `"${data.slip.advice}"`;
 }
 
 getAdviceBtn.addEventListener("click", getAdvice);
