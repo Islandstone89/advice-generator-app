@@ -6,7 +6,7 @@
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
-    src: url('/assets/fonts/manrope-v15-latin-regular.woff2') format('woff2');
+    src: url('../../assets/') format('woff2');
   }
 
   @font-face {
@@ -14,5 +14,5 @@
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 800;
-    src: url('/assets/fonts/manrope-v-15-latin-800.woff2') format('woff2');
+    src: url('../../assets/fonts/manrope-v15-latin-800.woff2') format('woff2');
   }
