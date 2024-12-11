@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/src/sass/assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Advice generator app</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main>
+    <div class="advice-generator">
+        
+            <h2 class="advice__heading" id="adviceHeading">Advice <span class="advice__number js-advice__number"></span></h2>
+            <p class="advice__text js-advice__text"></p>
+
+            <picture class="image-wrapper">
+              <source srcset="assets/images/pattern-divider-desktop.svg" media="(min-width: 30rem)">
+              <img src="assets/images/pattern-divider-mobile.svg" alt=""/>
+            </picture><!-- end image-wrapper -->
+
+    <button type="button" class="get-advice-btn js-get-advice-btn">
+        <svg class="dice-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="#202733"/>
+        </svg>
+      </button>
+
+    </div><!-- end advice-generator -->
+  </main>
+</body>
+</html>
