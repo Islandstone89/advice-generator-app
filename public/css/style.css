@@ -109,6 +109,8 @@ textarea:not([rows]) {
   --fw-800: 800;
   --fs-24px: 1.5rem;
   --fs-28px: 1.75rem;
+  --size-8px: 8px;
+  --size-12px: 12px;
   --size-16px: 16px;
   --size-24px: 24px;
   --size-32px: 32px;
@@ -129,6 +131,8 @@ textarea:not([rows]) {
   --fw-extra-bold: 800;
   --fs-l: var(--fs-24px);
   --fs-xl: var(--fs-28px);
+  --size-100: var(--size-8px);
+  --size-150: var(--size-12px);
   --size-200: var(--size-16px);
   --size-300: var(--size-24px);
   --size-400: var(--size-32px);
@@ -142,7 +146,7 @@ textarea:not([rows]) {
 
 /* UTILITIES */
 .flow {
-  --flow-space: var(--size-300);
+  --flow-space: var(--size-600);
 }
 
 .flow > * + * {
@@ -154,11 +158,23 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100svh;
   padding: var(--size-200);
   background-color: var(--clr-500);
   color: var(--clr-100);
   font-family: var(--ff-primary);
+  text-align: center;
+}
+
+.main {
+  padding-block: var(--size-400);
+}
+
+.tagline {
+  --flow-space: var(--size-100);
+}
+
+.accent {
+  color: var(--clr-200);
 }
 
 .advice-generator {
@@ -166,7 +182,6 @@ body {
   font-weight: var(--fw-extra-bold);
   background-color: var(--clr-400);
   border-radius: var(--size-200);
-  text-align: center;
   padding-block-start: var(--size-500);
   padding-block-end: calc(var(--size-400) + var(--btn-radius));
   padding-inline: var(--size-300);

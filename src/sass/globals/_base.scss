@@ -4,11 +4,23 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100svh;
     padding: var(--size-200);
     background-color: var(--clr-500);
     color: var(--clr-100);
     font-family: var(--ff-primary);
+    text-align: center;
+}
+
+.main {
+    padding-block: var(--size-400);
+}
+
+.tagline {
+    --flow-space: var(--size-100);
+}
+
+.accent {
+    color: var(--clr-200);
 }
 
 .advice-generator {
@@ -16,7 +28,7 @@ body {
     font-weight: var(--fw-extra-bold);
     background-color: var(--clr-400);
     border-radius: var(--size-200);
-    text-align: center;
+    
     padding-block-start: var(--size-500);
     padding-block-end: calc(var(--size-400) + var(--btn-radius));
     padding-inline: var(--size-300);
