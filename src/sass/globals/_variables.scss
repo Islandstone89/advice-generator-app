@@ -18,8 +18,13 @@
     --fw-400: 400;
     --fw-800: 800;
 
+    --fs-16px: 1rem;
+    --fs-18px: 1.125rem;
+    --fs-20px: 1.25rem;
     --fs-24px: 1.5rem;
     --fs-28px: 1.75rem;
+    --fs-32px: 2rem;
+    --fs-36px: 2.25rem;
 
     --size-8px: 8px;
     --size-12px: 12px;
@@ -46,8 +51,13 @@
     --fw-regular: 400;
     --fw-extra-bold: 800;
 
-    --fs-l: var(--fs-24px);
-    --fs-xl: var(--fs-28px);
+    --fs-200: var(--fs-16px);
+    --fs-225: var(--fs-18px);
+    --fs-250: var(--fs-20px);
+    --fs-300: var(--fs-24px);
+    --fs-350: var(--fs-28px);
+    --fs-400: var(--fs-32px);
+    --fs-450: var(--fs-36px);
 
     --size-100: var(--size-8px);
     --size-150: var(--size-12px);

@@ -107,8 +107,13 @@ textarea:not([rows]) {
   --ff-sans-serif: "Manrope", sans-serif;
   --fw-400: 400;
   --fw-800: 800;
+  --fs-16px: 1rem;
+  --fs-18px: 1.125rem;
+  --fs-20px: 1.25rem;
   --fs-24px: 1.5rem;
   --fs-28px: 1.75rem;
+  --fs-32px: 2rem;
+  --fs-36px: 2.25rem;
   --size-8px: 8px;
   --size-12px: 12px;
   --size-16px: 16px;
@@ -129,8 +134,13 @@ textarea:not([rows]) {
   --ff-primary: var(--ff-sans-serif);
   --fw-regular: 400;
   --fw-extra-bold: 800;
-  --fs-l: var(--fs-24px);
-  --fs-xl: var(--fs-28px);
+  --fs-200: var(--fs-16px);
+  --fs-225: var(--fs-18px);
+  --fs-250: var(--fs-20px);
+  --fs-300: var(--fs-24px);
+  --fs-350: var(--fs-28px);
+  --fs-400: var(--fs-32px);
+  --fs-450: var(--fs-36px);
   --size-100: var(--size-8px);
   --size-150: var(--size-12px);
   --size-200: var(--size-16px);
@@ -169,12 +179,18 @@ body {
   padding-block: var(--size-400);
 }
 
+.main-heading {
+  font-size: var(--fs-450);
+}
+
 .tagline {
   --flow-space: var(--size-100);
+  font-size: var(--fs-225);
 }
 
 .accent {
   color: var(--clr-200);
+  font-weight: var(--fw-extra-bold);
 }
 
 .advice-generator {
@@ -201,7 +217,7 @@ body {
 }
 
 .advice__text {
-  font-size: clamp(var(--fs-l), 1.33rem + 0.83vw, var(--fs-xl));
+  font-size: clamp(var(--fs-300), 1.33rem + 0.83vw, var(--fs-350));
   margin-block-start: var(--size-300);
   margin-block-end: var(--size-300);
 }
